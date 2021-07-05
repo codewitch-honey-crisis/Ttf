@@ -1,0 +1,9 @@
+C:\Users\gazto\Source\Repos\TTf\bin\Debug\Ttf.exe.config
+C:\Users\gazto\Source\Repos\TTf\bin\Debug\Ttf.exe
+C:\Users\gazto\Source\Repos\TTf\bin\Debug\Ttf.pdb
+C:\Users\gazto\Source\Repos\TTf\obj\Debug\Ttf.csproj.AssemblyReference.cache
+C:\Users\gazto\Source\Repos\TTf\obj\Debug\Ttf.Properties.Resources.resources
+C:\Users\gazto\Source\Repos\TTf\obj\Debug\Ttf.csproj.GenerateResource.cache
+C:\Users\gazto\Source\Repos\TTf\obj\Debug\Ttf.csproj.CoreCompileInputs.cache
+C:\Users\gazto\Source\Repos\TTf\obj\Debug\Ttf.exe
+C:\Users\gazto\Source\Repos\TTf\obj\Debug\Ttf.pdb

@@ -77,6 +77,20 @@ namespace Ttf
             }
             return wn!=0;
         }
+        static bool IsInsidePolygon2(Point P, Point[] V)
+        {
+            int i, j;
+            bool c = false;
+            for (i = 0, j = V.Length - 1; i < V.Length; j = i++)
+            {
+                Point pti = V[i];
+                Point ptj = V[j];
+                if (((pti.Y > P.Y) != (ptj.Y > P.Y)) &&
+                 (P.X < (ptj.X - pti.X) * (P.Y - pti.Y) / (ptj.Y - pti.Y) + pti.X))
+                    c = !c;
+            }
+            return c;
+        }
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -88,7 +102,7 @@ namespace Ttf
                     for(int x = 0;x<b.Width;++x)
                     {
                         Point pt = new Point(x + b.X, y + b.Y);
-                        if (IsInsidePolygon(pt,_poly))
+                        if (IsInsidePolygon2(pt,_poly))
                         {
                             e.Graphics.FillRectangle(brush, new Rectangle(pt, new Size(1, 1)));
                         }
